@@ -1,0 +1,30 @@
+.all-drum-content{
+
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
+  align-items: center;
+  background-image: url("Background/background-drum.jpg");
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+
+  
+  
+}
+.key{
+  font: bold 20px Arial, sans-serif;
+  border: 4px solid #000;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  transition: all 0.07s;
+}
+.playing{
+  transform: scale(1.1);
+  border-color: blue;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.9);
+  color: blue;
+  
+}

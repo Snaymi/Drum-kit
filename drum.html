@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="Drum-Style.css"> 
+</head>
+<body>
+
+  <!-- Aqui vai seu conteúdo (botões, etc.) -->
+
+    <div class="all-drum-content">
+    <button class="drum-button"> 
+    <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sounds">Clap</span>
+    </div>
+    </button>
+    <button class="drum-button"> 
+    <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="hinat"> HINAT</span>
+    </div>
+    </button>
+    <button class="drum-button"> 
+    <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="kick">KICK</span>
+    </div>
+    </button>
+        <button class="drum-button"> 
+    <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="openhat">OPENHAT</span>
+    </div>
+    </button>
+        <button class="drum-button"> 
+    <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="boom">BOOM</span>
+    </div>
+    </button>
+        <button class="drum-button"> 
+    <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="hide">HIDE</span>
+    </div>
+    </button>
+        <button class="drum-button"> 
+    <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="snare">SNARE</span>
+    </div>
+    </button>
+        <button class="drum-button"> 
+    <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="tom">TOM</span>
+    </div>
+    </button>
+        <button class="drum-button"> 
+    <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="tink">TINK</span>
+    </div>
+    </button>
+
+  
+  <audio data-key="65" src="Sounds/clap.mp3"></audio>
+  <audio data-key="83" src="Sounds/hihat.mp3"></audio>
+  <audio data-key="68" src="Sounds/kick.mp3"></audio>
+  <audio data-key="70" src="Sounds/openhat.mp3"></audio>
+  <audio data-key="71" src="Sounds/boom.mp3"></audio>
+  <audio data-key="72" src="Sounds/ride.mp3"></audio>
+  <audio data-key="74" src="Sounds/snare.mp3"></audio>
+  <audio data-key="75" src="Sounds/tom.mp3"></audio>
+  <audio data-key="76" src="Sounds/tink.mp3"></audio>
+  <!-- Vinculando o JS -->
+  <script src="drum.js"></script>
+</body>
+</html>
