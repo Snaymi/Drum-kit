@@ -1,7 +1,16 @@
 
 function playSound(e) {
-  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+  let keyCode;
+  if (e.type === 'keydown') {
+    keyCode = e.keyCode;
+  }
+  else if (e.type === 'click') {
+    const keyDiv = e.currentTarget.querySelector('.key');
+    if (!keyDiv) return; // If no keyDiv found, exit the function
+    keyCode = keyDiv.getAttribute('data-key');
+  }
+  const audio = document.querySelector(`audio[data-key="${keyCode}"]`)
+  const key = document.querySelector(`.key[data-key="${keyCode}"]`)
   if(!audio) return; //stop the function from running all together
   audio.currentTime = 0;//rewind to the start
   audio.play();
@@ -16,5 +25,9 @@ function removeTransition(e) {
 }
 
 const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+keys.forEach(key => {
+  key.addEventListener('transitionend', removeTransition);
+  key.parentElement.addEventListener('click', playSound); // Listener for click events on the parent element.
+});
+
 window.addEventListener('keydown', playSound);
