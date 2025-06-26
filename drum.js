@@ -14,7 +14,8 @@ function playSound(e) {
   audio.currentTime = 0;//rewind to the start
   audio.play();
   console.log(key);
-  key.classList.add('playing'); 
+  key.classList.add('playing');
+  setTimeout(() => key.classList.remove('playing'), 100); // Remove the class after 100ms
 }
 function removeTransition(e) {
     console.log(e);

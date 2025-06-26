@@ -14,69 +14,80 @@
 }
 .drum-background{
   background-color: #fff;
-  width: 90vw;
-  height: fit-content;
-  min-height: 30vh;
-  border: solid 2px #000;
+  width: 60vw;
+  max-width: 90vw;
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  min-height: fit-content;
+
   padding: 10px;
   border-radius: 10px;
+  overflow:hidden;
   
+
 
 }
 .drum-background .title{
   display: flex;
   justify-content: center;
+  font-family: 'Montserrat', sans-serif;
   
 }
 .drum{
   display: flex;
   align-items: center;
-  
-  overflow:hidden;
   flex-wrap: wrap;
+
 
 }
 .drum-button{
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin: 10px;
+    border-radius: 10px ;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    :active{
+    background-color: rgb(67, 5, 252);
+    border-color: rgb(77, 50, 251);
+    border: 5px solid rgb(77, 50, 251);
     border-radius: 10px;
-    min-width: 12%;
-    min-height: 10%;
-  
-   
- 
+    transform: scale(1.1);
     
+  }
+
 }
 .key{
-  font: bold 20px Arial, sans-serif;
-
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  transition: all 0.07s;
- 
+  transition: all 70ms ease;
 }
 .playing{
   transform: scale(1.1);
   border-color: blue;
   box-shadow: 0 0 10px rgba(0, 0, 255, 0.9);
   color: rgb(0, 0, 0);
-  background-color: rgba(163, 206, 235, 0.8);
+  background-color: rgba(0, 153, 255, 0.8);
 }
 .icon{
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   padding: 10px;
   
 }
 .key-button{
   margin: 5px;
   
+  
 }
 .sounds{
   margin: 0 0 10px 0;
-  font: bold 15px Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
 }
