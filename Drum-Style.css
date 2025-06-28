@@ -42,10 +42,7 @@ body{
     border:0;
     padding: 10px;
 }
-.drum-button:active{
-    background-color: rgb(67, 5, 252);
-    transform: scale(1.1);
-}
+
 .key{
   font-size: 20px;
   display: flex;

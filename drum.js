@@ -15,7 +15,6 @@ function playSound(e) {
   audio.play();
   console.log(key);
   key.classList.add('playing');
-  setTimeout(() => key.classList.remove('playing'), 10000); // Remove the class after 100ms
 }
 function removeTransition(e) {
     console.log(e);
